@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michael's Claude Design Files</title>
+<style>
+  :root{
+    --orange:#FE5000; --indigo:#0B0D2D; --muted:#5b6270; --line:#e7e9ee; --canvas:#f6f7f9;
+    --font:"Sofia Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--canvas);color:rgba(11,13,45,.88);font-family:var(--font);-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:860px;margin:0 auto;padding:72px 28px 96px;}
+  .brand{display:flex;align-items:center;gap:11px;margin-bottom:44px;}
+  .mark{width:34px;height:34px;border-radius:8px;background:var(--orange);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:19px;}
+  .brand .label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;}
+  h1{font-size:38px;line-height:1.08;letter-spacing:-.02em;margin:0 0 10px;font-weight:700;}
+  .sub{font-size:16px;line-height:1.55;color:var(--muted);margin:0 0 44px;max-width:560px;}
+  .grid{display:grid;gap:14px;}
+  a.card{display:flex;align-items:center;gap:18px;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease;}
+  a.card:hover{box-shadow:0 6px 22px rgba(11,13,45,.09);transform:translateY(-1px);border-color:#d8dbe2;}
+  .ico{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--orange),#ff7a3d);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .ico svg{width:24px;height:24px;fill:#fff;}
+  .meta{flex:1;min-width:0;}
+  .meta .t{font-size:17px;font-weight:600;margin-bottom:3px;}
+  .meta .d{font-size:14px;line-height:1.45;color:var(--muted);}
+  .arrow{color:#b7bcc6;font-size:22px;flex-shrink:0;}
+  .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:#9aa0ac;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">E</div>
+      <div class="label">Element451</div>
+    </div>
+    <h1>Michael's Claude Design Files</h1>
+    <p class="sub">Design work built with Claude — organized by type, then by product module.</p>
+
+    <div class="grid">
+      <a class="card" href="prototypes/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 4v10h14V8H5zm2 2h6v2H7v-2zm0 4h10v2H7v-2z"/></svg></div>
+        <div class="meta">
+          <div class="t">Prototypes</div>
+          <div class="d">Interactive prototypes and mockups, grouped by product module.</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+    </div>
+
+    <div class="foot">Add a new category by dropping a folder with an <code>index.html</code> beside this file.</div>
+  </div>
+</body>
+</html>

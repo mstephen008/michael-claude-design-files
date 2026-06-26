@@ -1,0 +1,6 @@
+{
+  "projectId": "ed648a25-dac3-4084-9fad-92764e6b492b",
+  "projectName": "Prototype Site Index",
+  "mode": "index-reference",
+  "note": "This repo is a static prototype site, NOT a component library. /design-sync's converter pipeline does not apply. This config records a lightweight 'index reference' sync: the navigation index files + a guidelines doc are uploaded to a Claude Design project so the design agent knows how to add menu-item cards when it builds new prototypes. See .design-sync/NOTES.md."
+}

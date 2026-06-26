@@ -19,11 +19,14 @@
   .crumb .here{color:rgba(11,13,45,.7);font-weight:600;}
   h1{font-size:34px;line-height:1.1;letter-spacing:-.02em;margin:0 0 10px;font-weight:700;}
   .sub{font-size:16px;line-height:1.55;color:var(--muted);margin:0 0 40px;max-width:560px;}
-  .empty{border:1px dashed #d3d7e0;border-radius:12px;padding:48px 28px;text-align:center;background:#fff;}
-  .empty .ic{width:54px;height:54px;border-radius:12px;background:#f1f2f5;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
-  .empty .ic svg{width:26px;height:26px;fill:#9aa0ac;}
-  .empty .t{font-size:17px;font-weight:600;margin-bottom:6px;}
-  .empty .d{font-size:14px;line-height:1.5;color:var(--muted);max-width:420px;margin:0 auto;}
+  .grid{display:grid;gap:14px;}
+  a.card{display:flex;align-items:center;gap:18px;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease;}
+  a.card:hover{box-shadow:0 6px 22px rgba(11,13,45,.09);transform:translateY(-1px);border-color:#d8dbe2;}
+  .ico{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--orange),#ff7a3d);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .ico svg{width:24px;height:24px;fill:#fff;}
+  .meta{flex:1;min-width:0;}
+  .meta .t{font-size:17px;font-weight:600;}
+  .arrow{color:#b7bcc6;font-size:22px;flex-shrink:0;}
   .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:#9aa0ac;}
 </style>
 </head>
@@ -33,10 +36,56 @@
     <h1>Case Management</h1>
     <p class="sub">Mockups and prototypes for the Case Management module.</p>
 
-    <div class="empty">
-      <div class="ic"><svg viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h3a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3V4a2 2 0 0 1 2-2zm0 4h4V4h-4v2z"/></svg></div>
-      <div class="t">No prototypes yet</div>
-      <div class="d">Prototypes for the Case Management module will show up here.</div>
+    <div class="grid">
+      <a class="card" href="my-students-filtering/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2 4 4h-4V4zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/></svg></div>
+        <div class="meta">
+          <div class="t">My Students Filtering (PDEV-2870)</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="card" href="new-user-form/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2 4 4h-4V4zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/></svg></div>
+        <div class="meta">
+          <div class="t">New User Form (PDEV-2826)</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="card" href="alert-rich-text-description/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2 4 4h-4V4zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/></svg></div>
+        <div class="meta">
+          <div class="t">Alert Rich Text – Description (PDEV-2483)</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="card" href="alert-notes-mention/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2 4 4h-4V4zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/></svg></div>
+        <div class="meta">
+          <div class="t">Alert Notes Mention (PDEV-2270)</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="card" href="edit-resolution-status/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2 4 4h-4V4zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/></svg></div>
+        <div class="meta">
+          <div class="t">Edit Resolution Status (PDEV-2494)</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="card" href="alert-sub-types/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2 4 4h-4V4zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/></svg></div>
+        <div class="meta">
+          <div class="t">Alert Sub-Types (PDEV-2493)</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
+      <a class="card" href="case-rule-alert-sync/">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 2 4 4h-4V4zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/></svg></div>
+        <div class="meta">
+          <div class="t">Case Rule Alert Sync (PDEV-1263)</div>
+        </div>
+        <div class="arrow">→</div>
+      </a>
     </div>
 
     <div class="foot">Add a new prototype by dropping a folder with an <code>index.html</code> beside this file.</div>

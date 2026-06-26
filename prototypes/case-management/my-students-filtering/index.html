@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Students Filtering (PDEV-2870)</title>
+<style>
+  :root{ --orange:#FE5000; --ink:rgba(11,13,45,.88); --line:#e7e9ee;
+    --font:"Sofia Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;background:#f6f7f9;}
+  iframe{position:fixed;inset:0;width:100%;height:100%;border:0;}
+  .back{
+    position:fixed;left:18px;bottom:18px;z-index:2147483647;
+    display:inline-flex;align-items:center;gap:9px;
+    background:#fff;color:var(--ink);text-decoration:none;
+    font-family:var(--font);font-size:14px;font-weight:600;
+    padding:11px 16px 11px 13px;border-radius:999px;border:1px solid var(--line);
+    box-shadow:0 6px 22px rgba(11,13,45,.16);
+    transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease;
+  }
+  .back:hover{box-shadow:0 10px 28px rgba(11,13,45,.22);transform:translateY(-1px);border-color:#d8dbe2;}
+  .back .ic{display:inline-flex;width:22px;height:22px;border-radius:999px;background:var(--orange);align-items:center;justify-content:center;}
+  .back .ic svg{width:13px;height:13px;fill:#fff;}
+</style>
+</head>
+<body>
+  <iframe src="prototype.html" title="My Students Filtering (PDEV-2870)"></iframe>
+  <a class="back" href="../" title="Back to Case Management">
+    <span class="ic"><svg viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg></span>
+    Case Management
+  </a>
+</body>
+</html>
